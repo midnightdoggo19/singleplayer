@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "singleplayer",
+	"version": "${version}",
+	"name": "Singleplayer",
+	"description": "Removes all buttons from the title screen but the one for singleplayer.",
+	"authors": [
+			"Midnight Doggo"
+	],
+	"contact": {
+		"sources": "https://github.com/midnightdoggo19/singleplayer",
+		"issues": "https://github.com/midnightdoggo19/singleplayer/issues"
+	},
+	"license": "GPL-3.0-only",
+	"icon": "assets/singleplayer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.midnightdoggo19.singleplayer.Singleplayer"
+		]
+	},
+	"mixins": [
+		"singleplayer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"conflicts": {
+		"modmenu": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {},
+			"description": "Removes all buttons from the title screen but the one for singleplayer.",
+			"icon": "assets/singleplayer/icon.png",
+			"update_checker": true
+		}
+	}
+}

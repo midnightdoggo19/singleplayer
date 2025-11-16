@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.midnightdoggo19.singleplayer.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"TitleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

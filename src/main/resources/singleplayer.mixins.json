@@ -2,9 +2,6 @@
   "required": true,
   "package": "com.midnightdoggo19.singleplayer.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "TitleMixin"
-  ],
   "injectors": {
     "defaultRequire": 1
   },
@@ -15,6 +12,7 @@
     "BreakingSplashMixin",
     "DisableMultiplayerMixin",
     "NoRotationMixin",
-    "ScreengleplayerMixin"
+    "PanoramaMixin",
+    "TitleMixin"
   ]
 }

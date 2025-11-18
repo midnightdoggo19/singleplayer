@@ -54,8 +54,6 @@ public class TitleMixin
     @Shadow
     private static final Text COPYRIGHT = Text.literal("");
 
-    @Shadow @Final private static Logger LOGGER;
-
     protected TitleMixin(Text title) {
         super(title);
     }

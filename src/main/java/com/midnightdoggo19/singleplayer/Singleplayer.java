@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @author Midnight Doggo
- * Lets you know it's running. That's all.
+ * Lets you know it's running; initializes the config. Also home to the action list.
  */
 
 public class Singleplayer implements ModInitializer {
@@ -18,5 +18,11 @@ public class Singleplayer implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Loading Minecraft on Lonely Mode.");
+		SingleplayerRegisterConfigs.init();
 	}
+
+//	TODO List:
+//	* Add functionality with that one mod that changes the version number (conditional mixin)
+//	* Make config work
+//	* Backports
 }

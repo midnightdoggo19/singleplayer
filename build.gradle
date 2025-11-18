@@ -11,9 +11,15 @@ base {
 }
 
 repositories {
+	// Modmenu
 	maven {
 		name = "Terraformers"
 		url = "https://maven.terraformersmc.com/"
+	}
+	// Fzzy Config
+	maven {
+		name = "FzzyMaven"
+		url = "https://maven.fzzyhmstrs.me/"
 	}
 }
 
@@ -28,6 +34,9 @@ dependencies {
 
 	// Modmenu
 	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+
+	// Fzzy Config
+	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzyConfigVersion}"
 }
 
 processResources {

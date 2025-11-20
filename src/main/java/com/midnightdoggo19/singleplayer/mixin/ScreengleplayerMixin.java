@@ -10,6 +10,6 @@ public abstract class ScreengleplayerMixin extends AbstractParentElement impleme
      * @author Midnight Doggo
      * @reason Disables the title screen panorama.
      */
-    @Overwrite
-    public void renderPanoramaBackground(DrawContext context, float deltaTicks) {}
+//    @Overwrite
+//    public void renderPanoramaBackground(DrawContext context, float deltaTicks) {}
 }

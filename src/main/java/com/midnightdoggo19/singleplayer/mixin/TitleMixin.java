@@ -45,7 +45,7 @@ public class TitleMixin
      */
     @Inject(method = "render", at = @At("HEAD"))
     public void shove (DrawContext context, int mouseX, int mouseY, float deltaTicks, CallbackInfo ci) {
-        this.height = this.height * 2; // this is so scuffed but it forces the test off the screen
+        this.height = this.height * 2; // this is very scuffed but it forces the text off of the screen
     }
 
     /**
